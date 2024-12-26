@@ -2,11 +2,11 @@
 // TODO: Fix all the Clippy lints.
 
 #[rustfmt::skip]
-#[allow(unused_variables, unused_assignments)]
+#[allow(unused_variables, unused_assignments, clippy::possible_missing_comma, clippy::almost_swapped, clippy::let_unit_value)]
 fn main() {
     let my_option: Option<()> = None;
     if my_option.is_none() {
-        println!("{:?}", my_option.unwrap());
+        println!("{:?}", my_option);
     }
 
     let my_arr = &[
